@@ -1,0 +1,27 @@
+{
+    "name": "corbett-autofill",
+    "description": "populate corbett website automatically",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "64": "assets/ico.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.corbettonline.uk.gov.in/VisitorAuth/visitorLogin*"
+            ],
+            "js": [
+                "login.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.corbettonline.uk.gov.in/VisitorAuth/AccBGuestEntry.aspx*"
+            ],
+            "js": [
+                "fillData.js"
+            ]
+        }
+    ]
+}
