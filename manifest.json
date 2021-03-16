@@ -9,7 +9,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.corbettonline.uk.gov.in/VisitorAuth/visitorLogin*"
+                "https://www.corbettonline.uk.gov.in/*/*isitorLogin*"
             ],
             "js": [
                 "login.js"
@@ -17,7 +17,7 @@
         },
         {
             "matches": [
-                "https://www.corbettonline.uk.gov.in/VisitorAuth/AccBGuestEntry.aspx*"
+                "https://www.corbettonline.uk.gov.in/*/*ccBGuestEntry.aspx*"
             ],
             "js": [
                 "fillData.js"
